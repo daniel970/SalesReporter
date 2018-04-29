@@ -22,7 +22,8 @@ public class Salesman implements Comparable<Salesman> {
 
 	@Override
 	public int compareTo(Salesman anotherSalesman) {
+		double compareSales = ((Salesman)anotherSalesman).getSales();
 		
-		return name.compareTo(anotherSalesman.name);
+		return (int) (compareSales - this.sales);
 	}
 }

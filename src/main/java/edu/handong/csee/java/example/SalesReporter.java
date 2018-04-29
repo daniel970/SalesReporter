@@ -3,7 +3,7 @@ package edu.handong.csee.java.example;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class SalesReporter implements Comparable<team> {
+public class SalesReporter {
 	
 	private double highestSales;
 	private double averageSales;
@@ -15,11 +15,7 @@ public class SalesReporter implements Comparable<team> {
 		SalesReporter myReporter = new SalesReporter();
 		myReporter.run();
 	}
-	
-	public int compareTo(team a) {
-		
-		return this.name - a.name;
-	}
+
 	
 	public void run() {
 		getData();
